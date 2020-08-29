@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import Hello from "./Hello";
 
 class Counter extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: 0
+            count: 0,
+            message : 'Parent'
         }
     }
 
@@ -31,11 +33,16 @@ class Counter extends Component {
         this.increment()
     }
 
+    greetParent(data){
+        alert(`This ${this.state.message} from ${data}`)
+    }
+
     render() {
         return (
             <div>
                 <h1>Count - {this.state.count} </h1>
                 <button onClick={() => this.incrementFive()}>Increment Count</button>
+                <Hello clickToParent={this.greetParent.bind(this)}/>
             </div>
         )
     }

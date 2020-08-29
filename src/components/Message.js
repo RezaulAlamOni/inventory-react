@@ -5,8 +5,11 @@ class Message extends Component {
         super();
         this.state = {
             message: "Welcome Visitor"
-
         }
+
+        //bind this key
+        // this.changeLog = this.changeLog.bind(this)
+
     }
 
     changeMessage(){
@@ -15,6 +18,7 @@ class Message extends Component {
         })
     }
     changeLog(){
+        console.log(this)
         console.log('class event handle')
     }
     
@@ -24,7 +28,7 @@ class Message extends Component {
                 <h1>{this.state.message} </h1>
                 {/*{this.props.children}*/}
                 <button onClick={() => this.changeMessage()}>Change Text</button>
-                <button onClick={this.changeLog}>Change Text</button>
+                <button onClick={this.changeLog.bind(this)}>Change Text</button>
             </div>
         )
     }

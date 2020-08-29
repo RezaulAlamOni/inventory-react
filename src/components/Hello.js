@@ -1,10 +1,12 @@
 import React from "react";
 
-const Hello = () =>{
+const Hello = (props) =>{
     return (
         // JSX use in component
       <div>
           <h1>Hello JSX Example</h1>
+
+          <button onClick={() =>props.clickToParent('1111')}>Click to parent</button>
       </div>
     );
     // without JSX
