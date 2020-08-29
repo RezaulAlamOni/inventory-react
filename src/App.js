@@ -15,9 +15,9 @@ function App() {
             <Greet name="Rezaul" herroName="HErro">
                 <p>This is children props</p>
             </Greet>
-            {/*<Welcome name="Messi" herroName="Football">*/}
-            {/*    <a href="/"> THis is children prop 1</a>*/}
-            {/*</Welcome>*/}
+            <Welcome name="Messi" herroName="Football">
+                <a href="/"> THis is children prop 1</a>
+            </Welcome>
             {/*<Welcome name="Nadal" herroName="Tennis">*/}
             {/*    <a href="/"> THis is children prop 2</a><br/>*/}
             {/*    <button>Click Here</button>*/}
