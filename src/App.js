@@ -12,9 +12,9 @@ function App() {
     return (
         <div className="App">
             {/*<Greet name="Oni"/>*/}
-            {/*<Greet name="Rezaul">*/}
-            {/*    <p>This is children props</p>*/}
-            {/*</Greet>*/}
+            <Greet name="Rezaul" herroName="HErro">
+                <p>This is children props</p>
+            </Greet>
             {/*<Welcome name="Messi" herroName="Football">*/}
             {/*    <a href="/"> THis is children prop 1</a>*/}
             {/*</Welcome>*/}
