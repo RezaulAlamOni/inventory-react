@@ -14,6 +14,9 @@ class Message extends Component {
             message: "Thank you for subscription !"
         })
     }
+    changeLog(){
+        console.log('class event handle')
+    }
     
     render() {
         return (
@@ -21,6 +24,7 @@ class Message extends Component {
                 <h1>{this.state.message} </h1>
                 {/*{this.props.children}*/}
                 <button onClick={() => this.changeMessage()}>Change Text</button>
+                <button onClick={this.changeLog}>Change Text</button>
             </div>
         )
     }

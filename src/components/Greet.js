@@ -15,9 +15,13 @@ import React from 'react';
 // }
 const Greet = ({name,herroName}) => {
     // const {name, herroName} = props
+    function clickHandler(){
+        console.log("click handle from functional component")
+    }
     return (
         <div>
             <h1> Hello  {name} Welcome {herroName}</h1>
+            <button onClick={clickHandler}>Click</button>
         </div>
     )
 }
