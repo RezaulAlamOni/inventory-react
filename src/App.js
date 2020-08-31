@@ -23,7 +23,7 @@ function App() {
             {/*    <a href="/"> THis is children prop 2</a><br/>*/}
             {/*    <button>Click Here</button>*/}
             {/*</Welcome>*/}
-            {/*<Hello/>*/}
+            <Hello/>
             {/*<Message />*/}
             {/*<Counter/>*/}
 

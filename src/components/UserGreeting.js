@@ -6,7 +6,8 @@ class UserGreeting extends Component {
         super(props, context);
 
         this.state = {
-            isLoggedIn : true
+            isLoggedIn : true,
+            users : ['Oni',"Mariam","Rezaul","Miraz"]
         }
     }
 
@@ -34,7 +35,10 @@ class UserGreeting extends Component {
 
         // user sort circuit operator approach
 
-        return this.state.isLoggedIn && <div><h1>Welcome Visitor</h1></div>
+        return this.state.isLoggedIn && <div>
+            <h1>Welcome Visitor</h1>
+            {this.state.users.map(name => <h1>{name}</h1>)}
+        </div>
     }
 }
 

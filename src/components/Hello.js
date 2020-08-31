@@ -1,11 +1,15 @@
 import React from "react";
 
 const Hello = (props) =>{
+    const users = ['Oni',"Mariam","Rezaul","Miraz"];
+    const userList = users.map(name => <h1>{name}</h1>);
     return (
         // JSX use in component
       <div>
           <h1>Hello JSX Example</h1>
-
+          {users.map(name => <h1>{name}</h1>)}
+          =======
+          {userList}
           <button onClick={() =>props.clickToParent('1111')}>Click to parent</button>
       </div>
     );
